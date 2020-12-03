@@ -41,7 +41,7 @@
     "@nrwl/eslint-plugin-nx": "11.0.0-beta.11",
     "@nrwl/jest": "11.0.0-beta.11",
     "@nrwl/nest": "11.0.0-beta.11",
-    "@nrwl/node": "11.0.0-beta.11",
+    "@nrwl/node": "^11.0.0-beta.11",
     "@nrwl/tao": "11.0.0-beta.11",
     "@nrwl/workspace": "11.0.0-beta.11",
     "@types/jest": "26.0.8",
