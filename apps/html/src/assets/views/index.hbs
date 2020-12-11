@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>App</title>
+</head>
+
+<body>
+<ul class="todos">
+  {{#each todos}}
+    <li><input type="checkbox" {{#if done}}checked{{/if}} /> {{message}}</li>
+  {{/each}}
+</ul>
+</body>
+</html>
