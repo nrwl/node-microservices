@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  html:
+    image: html
+    environment:
+      - apiPath=http://api:3333
+    ports:
+      - "8080:3334"
+  api:
+    image: api
+    ports:
+      - "8081:3333"
