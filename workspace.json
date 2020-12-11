@@ -15,7 +15,8 @@
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": ["apps/api/src/assets"]
+            "assets": ["apps/api/src/assets"],
+            "generatePackageJson": true
           },
           "configurations": {
             "production": {
@@ -67,7 +68,8 @@
             "outputPath": "dist/apps/html",
             "main": "apps/html/src/main.ts",
             "tsConfig": "apps/html/tsconfig.app.json",
-            "assets": ["apps/html/src/assets"]
+            "assets": ["apps/html/src/assets"],
+            "generatePackageJson": true
           },
           "configurations": {
             "production": {
