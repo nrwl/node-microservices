@@ -8,6 +8,15 @@
       "prefix": "api",
       "schematics": {},
       "targets": {
+        "deploy": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              "nx build api",
+              "docker build -f ./apps/api/Dockerfile . -t api"
+            ]
+          }
+        },
         "build": {
           "builder": "@nrwl/node:build",
           "outputs": ["{options.outputPath}"],
@@ -61,6 +70,15 @@
       "prefix": "html",
       "schematics": {},
       "targets": {
+        "deploy": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              "nx build html",
+              "docker build -f ./apps/html/Dockerfile . -t html"
+            ]
+          }
+        },
         "build": {
           "builder": "@nrwl/node:build",
           "outputs": ["{options.outputPath}"],
