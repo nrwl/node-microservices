@@ -14,7 +14,8 @@
             "commands": [
               "nx build api",
               "docker build -f ./apps/api/Dockerfile . -t api"
-            ]
+            ],
+            "parallel": false
           }
         },
         "build": {
@@ -76,7 +77,8 @@
             "commands": [
               "nx build html",
               "docker build -f ./apps/html/Dockerfile . -t html"
-            ]
+            ],
+            "parallel": false
           }
         },
         "build": {
