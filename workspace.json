@@ -7,7 +7,7 @@
       "projectType": "application",
       "prefix": "api",
       "schematics": {},
-      "architect": {
+      "targets": {
         "build": {
           "builder": "@nrwl/node:build",
           "outputs": ["{options.outputPath}"],
@@ -59,7 +59,7 @@
       "projectType": "application",
       "prefix": "html",
       "schematics": {},
-      "architect": {
+      "targets": {
         "build": {
           "builder": "@nrwl/node:build",
           "outputs": ["{options.outputPath}"],
@@ -110,7 +110,7 @@
       "sourceRoot": "libs/todos/src",
       "projectType": "library",
       "schematics": {},
-      "architect": {
+      "targets": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
