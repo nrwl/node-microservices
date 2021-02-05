@@ -5,8 +5,8 @@ services:
     environment:
       - apiPath=http://api:3333
     ports:
-      - "8080:3334"
+      - "80:3334"
   api:
     image: api
     ports:
-      - "8081:3333"
+      - "8080:3333"

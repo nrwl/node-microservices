@@ -4,8 +4,10 @@
   "license": "MIT",
   "scripts": {
     "nx": "nx",
-    "start": "nx serve",
-    "build": "nx build",
+    "start": "nx run-many --target=serve --projects=api,html --parallel",
+    "build": "nx run-many --target=build --projects=api,html --parallel",
+    "docker:build": "nx run-many --target=deploy --projects=api,html --parallel",
+    "docker:start": "docker-compose up",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",
